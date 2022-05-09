@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.C4Controller">
+   <children>
+      <TextField fx:id="tfIP" layoutX="401.0" layoutY="316.0" prefHeight="25.0" prefWidth="200.0" />
+      <Text fx:id="textIP" layoutX="401.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter server IP:" wrappingWidth="200.00000298023224" />
+      <Button fx:id="btnConnect" layoutX="425.0" layoutY="371.0" mnemonicParsing="false" onAction="#connect" prefHeight="40.0" prefWidth="150.0" text="Connect" />
+      <GridPane fx:id="gridPane" layoutX="150.0" layoutY="80.0" maxHeight="600.0" maxWidth="700.0" minHeight="600.0" minWidth="700.0" onMouseClicked="#clickBoard" prefHeight="600.0" prefWidth="700.0" visible="false">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="100.0" minHeight="100.0" prefHeight="100.0" vgrow="NEVER" />
+            <RowConstraints maxHeight="100.0" minHeight="100.0" prefHeight="100.0" vgrow="NEVER" />
+            <RowConstraints maxHeight="100.0" minHeight="100.0" prefHeight="100.0" vgrow="NEVER" />
+            <RowConstraints maxHeight="100.0" minHeight="100.0" prefHeight="100.0" vgrow="NEVER" />
+            <RowConstraints maxHeight="100.0" minHeight="100.0" prefHeight="100.0" vgrow="NEVER" />
+            <RowConstraints maxHeight="100.0" minHeight="100.0" prefHeight="100.0" vgrow="NEVER" />
+         </rowConstraints>
+      </GridPane>
+      <Text fx:id="textConnectInfo" fill="RED" layoutX="401.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="200.00000298023224" />
+      <Text fx:id="textGameInfo" layoutX="150.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="281.162109375">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Text fx:id="textPlayAgain" layoutX="680.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Play Again?" visible="false" wrappingWidth="200.0">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnYes" layoutX="899.0" layoutY="21.0" mnemonicParsing="false" onMouseClicked="#playAgain" prefHeight="25.0" prefWidth="80.0" text="Yes" visible="false" />
+      <Button fx:id="btnNo" layoutX="899.0" layoutY="56.0" mnemonicParsing="false" onMouseClicked="#exitGame" prefHeight="25.0" prefWidth="80.0" text="No" visible="false" />
+      <Button fx:id="btnNewGame" layoutX="14.0" layoutY="21.0" mnemonicParsing="false" onMouseClicked="#playAgain" text="New game" visible="false" />
+      <Text fx:id="textWins" layoutX="24.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wins: 0" visible="false">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="textLosses" layoutX="24.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Losses: 0" visible="false">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="textTokensLeft" layoutX="24.0" layoutY="400.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tokens: 21" visible="false">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="textTies" layoutX="24.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ties: 0" visible="false">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
